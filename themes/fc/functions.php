@@ -133,11 +133,10 @@ function fc_scripts() {
 		array(), 
 		FC_VERSION 
 	);
-	
+
 	wp_enqueue_style( 
-		'foundation-style', 
-		get_template_directory_uri() . '/assets/css/vendor/foundation.min.css',
-		'6.7.4' 
+		'fc-custom-style', 
+		get_template_directory_uri() . '/assets/css/app.css'
 	);
 
 	wp_enqueue_script( 
