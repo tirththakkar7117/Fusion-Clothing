@@ -13,11 +13,16 @@ i.fa {
     color: #333366;
 }
 
+/* Header */
 header.entry-header {
     background-color: #eeeeee;
     text-align: center;
     height: 80px;
     padding: 6px 0px 0px 0px;
+}
+
+header#masthead {
+    background-color: #333366;
 }
 
 .center {
@@ -26,4 +31,52 @@ header.entry-header {
 
 .post-90 header {
     display: none;
+}
+
+/* Header Navigation Menu */
+
+#primary-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li.page_item{
+    float: left;
+}
+
+.page_item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.page_item a:hover {
+    background-color: #111;
+}
+
+nav#site-navigation {
+    justify-content: center;
+    text-align: center;
+    display: inline-grid;
+}
+
+/* 3 Columns Layout for Header */
+.column-3 {
+    display: inline-block;
+    width: 25%;
+}
+
+.column-6 {
+    display: inline-block;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
