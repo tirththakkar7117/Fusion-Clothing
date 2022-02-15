@@ -1,91 +1,161 @@
 body {
-font-family: futura;
-font-style: normal;
-font-weight: 400;
-line-height: 1.5;
-color: #0a0a0a;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-
-i.fa {
-    font-size: 100px;
-    color: #333366;
-}
-
-/* Header */
-header.entry-header {
-    background-color: #eeeeee;
-    text-align: center;
-    height: 80px;
-    padding: 6px 0px 0px 0px;
-}
-
-header#masthead {
-    background-color: #333366;
-}
-
-.center {
-    text-align: center;
-}
-
-.post-90 header {
-    display: none;
-}
-
-/* Header Navigation Menu */
-
-#primary-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li.page_item{
-    float: left;
-}
-
-.page_item a {
-    display: block;
-    color: #ff5f5f;
-    text-align: center;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 15pt;
-}
-
-.page_item a:hover {
-    background-color: #333366;
-    border: 2px solid #ff5f5f;
-}
-
-nav#site-navigation {
-    justify-content: center;
-    text-align: center;
-    display: inline-grid;
-}
-
-/* 3 Columns Layout for Header */
-.column-3 {
-    display: inline-block;
-    width: 24%;
-}
-
-.column-6 {
-    display: inline-block;
-    width: 50%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Header Icons CSS */
-.font-custom-style {
-    font-size: 30pt !important;
-    color: #ff5f5f !important;
-    padding: 0px 20px 0px 0px;
-}
+    font-family: futura;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+    
+    i.fa {
+        font-size: 100px;
+        color: #333366;
+    }
+    
+    /* Header */
+    header.entry-header {
+        background-color: #eeeeee;
+        text-align: center;
+        height: 80px;
+        padding: 6px 0px 0px 0px;
+    }
+    
+    header#masthead {
+        background-color: #333366;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    .post-90 header {
+        display: none;
+    }
+    
+    /* Header Navigation Menu */
+    
+    #primary-menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    li.page_item{
+        float: left;
+    }
+    
+    .page_item a {
+        display: block;
+        color: #ff5f5f;
+        text-align: center;
+        padding: 12px 20px;
+        text-decoration: none;
+        font-size: 15pt;
+    }
+    
+    .page_item a:hover {
+        background-color: #f75c60;
+        border: 2px solid #333366;
+        color: #333366;
+    }
+    
+    nav#site-navigation {
+        justify-content: center;
+        text-align: center;
+        display: inline-grid;
+    }
+    
+    /* 3 Columns Layout for Header */
+    .column-3 {
+        display: inline-block;
+        width: 24%;
+    }
+    
+    .column-6 {
+        display: inline-block;
+        width: 50%;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Header Icons CSS */
+    .font-custom-style {
+        font-size: 30pt !important;
+        color: #ff5f5f !important;
+        padding: 0px 20px 0px 0px;
+    }
+    
+    /* Footer Styling */
+    
+    footer#colophon {
+        background-color: #333366;
+        text-align: center;
+    }
+    
+    .site-info {
+        color: #ff5f5f;
+        font-size: 15pt;
+        font-weight: bold;
+    }
+    
+    /* Category List Styling */
+    
+    .cat-item a {
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    ul.wp-block-categories {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    /* Latest Post List Styling */
+    
+    ul.wp-block-latest-posts {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .wp-block-latest-posts a {
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    /* Block Title Heading */
+    
+    .wp-block-site-title a {
+        color: #333366;
+        text-decoration: none;
+        font-size: 25pt;
+    }
+    
+    /* Block Post Heading */
+    
+    .wp-block-post-title a {
+        color: #333366;
+        text-decoration: none;
+        font-size: 20pt;
+        cursor: pointer;
+    }
+    
+    .wp-block-post-title a:hover {
+        color: #ff5f5f;
+    }
+    
+    /* Post Excerpt */
+    
+    a.wp-block-post-excerpt__more-link {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+    }
