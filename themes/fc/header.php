@@ -34,15 +34,24 @@
 		<nav id="site-navigation" class="main-navigation column-6">
 			<div id="primary-menu" class="menu">
 				<ul>
-				<li class="page_item page-item-103"><a href="http://clothing.local/about/">About</a></li>
-				<li class="page_item page-item-114"><a href="http://clothing.local/contact-page/">Contact</a></li>
-				<li class="page_item page-item-90 current_page_item"><a href="http://clothing.local/" aria-current="page">Home</a></li>
-				<li class="page_item page-item-2"><a href="http://clothing.local/sample-page/">Sample Page</a></li>
-				<li class="page_item page-item-5"><a href="http://clothing.local/test-block/">Test Block</a></li>
+					<li class="page_item">
+						<a href="http://clothing.local/about/">About</a>
+					</li>
+					<li class="page_item page-item-114">
+						<a href="http://clothing.local/contact-page/">Contact</a>
+					</li>
+					<li class="page_item page-item-90 current_page_item"><a href="http://clothing.local/" aria-current="page">Home</a></li>
+					<li class="page_item page-item-2"><a href="http://clothing.local/sample-page/">Sample Page</a></li>
+					<li class="page_item page-item-5"><a href="http://clothing.local/test-block/">Test Block</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
 		<!-- #site-navigation -->
-		<div class="icons column-3"></div>
+		<div class="icons column-3 center">
+		<i class="fa fa-user fa-icon font-custom-style" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart fa-icon font-custom-style" aria-hidden="true"></i>
+            <i class="fa fa-search fa-icon font-custom-style" aria-hidden="true"></i>
+		</div>
 	</div>
 </header>

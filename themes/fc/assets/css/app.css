@@ -1,5 +1,5 @@
 body {
-font-family: futura-pt,sans-serif;
+font-family: futura;
 font-style: normal;
 font-weight: 400;
 line-height: 1.5;
@@ -48,14 +48,16 @@ li.page_item{
 
 .page_item a {
     display: block;
-    color: white;
+    color: #ff5f5f;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 20px;
     text-decoration: none;
+    font-size: 15pt;
 }
 
 .page_item a:hover {
-    background-color: #111;
+    background-color: #333366;
+    border: 2px solid #ff5f5f;
 }
 
 nav#site-navigation {
@@ -67,7 +69,7 @@ nav#site-navigation {
 /* 3 Columns Layout for Header */
 .column-3 {
     display: inline-block;
-    width: 25%;
+    width: 24%;
 }
 
 .column-6 {
@@ -79,4 +81,11 @@ nav#site-navigation {
     content: "";
     display: table;
     clear: both;
+}
+
+/* Header Icons CSS */
+.font-custom-style {
+    font-size: 30pt !important;
+    color: #ff5f5f !important;
+    padding: 0px 20px 0px 0px;
 }
