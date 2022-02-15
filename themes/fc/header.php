@@ -24,34 +24,22 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$fc_description = get_bloginfo( 'description', 'display' );
-			if ( $fc_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $fc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-primary',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+<header id="masthead" class="site-header">
+	<div class="site-branding">
+		<p class="site-title"><a href="http://clothing.local/" rel="home">Clothing</a></p>
+		<p class="site-description">Just another WordPress site</p>
+	</div>
+	<!-- .site-branding -->
+	<nav id="site-navigation" class="main-navigation">
+		<div id="primary-menu" class="menu">
+			<ul>
+			<li class="page_item page-item-103"><a href="http://clothing.local/about/">About</a></li>
+			<li class="page_item page-item-114"><a href="http://clothing.local/contact-page/">Contact</a></li>
+			<li class="page_item page-item-90 current_page_item"><a href="http://clothing.local/" aria-current="page">Home</a></li>
+			<li class="page_item page-item-2"><a href="http://clothing.local/sample-page/">Sample Page</a></li>
+			<li class="page_item page-item-5"><a href="http://clothing.local/test-block/">Test Block</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- #site-navigation -->
+	</header>
