@@ -69,3 +69,8 @@ a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart:hover {
     background-color: transparent;
     border: 2px solid #ff5f5f;
 }
+
+.wc-block-grid__product-title {
+    color: #000000;
+    font-size: 15pt;
+}
