@@ -158,4 +158,53 @@ body {
         color: #000000;
         text-decoration: none;
         font-weight: bold;
-    }
+}
+
+/* Footer Styling */
+
+.col-3 {
+    float: left;
+    width: 23%;
+    padding: 10px;
+    height: 300px;
+}
+
+.col-6 {
+    float: left;
+    width: 49%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bg-primary-color {
+    background-color: #333366;
+}
+
+.bg-primary-color h2 {
+    color: #ff5f5f;
+}
+
+.bg-primary-color p {
+    color: #ffffff;
+}
+
+.bg-primary-color  li {
+    color: #ffffff;
+}
+
+.li-style {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.white {
+    color: #ffffff !important;
+    font-size: 30px !important;
+    padding: 10px 10px 0px 20px;
+}

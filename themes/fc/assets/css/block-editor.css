@@ -19,7 +19,7 @@
 }
 
 .alignwide {
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -52,4 +52,20 @@
     padding: calc(.667em + 2px) calc(1.333em + 2px);
     text-align: center;
     border-radius: inherit;
+}
+
+a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart {
+    color: #ff5f5f;
+    background-color: #333366;
+    font-size: 1.125em;
+    cursor: pointer;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center;
+    border-radius: inherit;
+}
+
+a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart:hover {
+    color: #ff5f5f;
+    background-color: transparent;
+    border: 2px solid #ff5f5f;
 }
