@@ -27,7 +27,7 @@
 <header id="masthead" class="site-header">
 	<div class="row">
 		<div class="site-branding column-3 center">
-			<img src="http://clothing.local/wp-content/uploads/2022/02/logo.png" alt="Fusion Clothing Logo" style="width: 200px;" />
+			<a href="http://clothing.local/"><img src="http://clothing.local/wp-content/uploads/2022/02/logo.png" alt="Fusion Clothing Logo" style="width: 200px;" /></a>
 		</div>
 		<!-- .site-branding -->
 		<div class="column-6 center flex-center">

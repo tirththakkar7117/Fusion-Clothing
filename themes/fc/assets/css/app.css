@@ -267,8 +267,18 @@ button#wsf-1-field-5:hover {
     }
     .col-4 {
         float: left;
-        width: 31%;
+        width: auto;
         padding: 10px;
         height: auto;
+    }
+    .row {
+        display: inline-block;
+        text-align: center;
+    }
+    .column-3 {
+        width: auto;
+    }
+    .column-6 {
+        width: 100% !important;
     }
 }
