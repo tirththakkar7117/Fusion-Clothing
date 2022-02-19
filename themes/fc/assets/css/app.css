@@ -78,10 +78,31 @@ body {
         width: 50%;
     }
     
+    .row {
+        display: flex;  
+        flex-direction: row;
+        flex-wrap: nowrap;    
+    }
+
     .row:after {
         content: "";
         display: table;
         clear: both;
+    }
+
+    .flex-center {
+        align-items: center;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flex-no-width {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
     
     /* Header Icons CSS */
@@ -182,7 +203,7 @@ body {
     float: left;
     width: 31%;
     padding: 10px;
-    height: 400px;
+    height: 350px;
 }
 
 .row:after {
@@ -233,4 +254,21 @@ button#wsf-1-field-5:hover {
     color: #333366;
     background-color: transparent;
     border: 2px solid #333366;
+}
+
+@media screen and (max-width: 782px) {
+    html {
+        margin-top: 46px !important;
+    }
+    .entry-content > * {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .col-4 {
+        float: left;
+        width: 31%;
+        padding: 10px;
+        height: auto;
+    }
 }
