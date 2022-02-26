@@ -27,7 +27,7 @@
 <header id="masthead" class="site-header">
 	<div class="row">
 		<div class="site-branding column-3 center">
-			<a href="http://clothing.local/"><img src="http://clothing.local/wp-content/uploads/2022/02/logo.png" alt="Fusion Clothing Logo" style="width: 200px;" /></a>
+			<a href="http://clothing.local/"><img src="http://clothingdeliverables2.local/wp-content/uploads/2022/02/logo.png" alt="Fusion Clothing Logo" style="width: 200px;" /></a>
 		</div>
 		<!-- .site-branding -->
 		<div class="column-6 center flex-center">
@@ -36,12 +36,12 @@
 					<ul>
 						<li class="page_item page-item-90 current_page_item"><a href="http://clothing.local/" aria-current="page">Home</a></li>
 						<li class="page_item">
-							<a href="http://clothing.local/about/">About</a>
+							<a href="http://clothingdeliverables2.local/about/">About</a>
 						</li>
 						<li class="page_item page-item-114">
-							<a href="http://clothing.local/contact-page/">Contact</a>
+							<a href="http://clothingdeliverables2.local/contact-page/">Contact</a>
 						</li>
-						<li class="page_item page-item-5"><a href="http://clothing.local/test-block/">Test Block</a>
+						<li class="page_item page-item-5"><a href="http://clothingdeliverables2.local/test-block/">Test Block</a>
 						</li>
 					</ul>
 				</div>
