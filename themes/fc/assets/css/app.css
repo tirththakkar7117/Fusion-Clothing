@@ -12,6 +12,49 @@ body {
         font-size: 100px;
         color: #333366;
     }
+
+    /* Menu */
+
+    ul#primary-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-menu-1-container {
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+
+    .menu-item a {
+        display: block;
+        color: #ff5f5f;
+        text-align: center;
+        padding: 12px 20px;
+        text-decoration: none;
+        font-size: 15pt;
+    }
+
+    .menu-item a:hover {
+        background-color: #f75c60;
+        border: 2px solid #333366;
+        color: #333366;
+    }
+
+    li {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+    }
+    
+    nav#site-navigation {
+        justify-content: center;
+        text-align: center;
+        display: inline-grid;
+    }
     
     /* Header */
     header.entry-header {
@@ -31,40 +74,6 @@ body {
     
     .post-90 header {
         display: none;
-    }
-    
-    /* Header Navigation Menu */
-    
-    #primary-menu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    
-    li.page_item{
-        float: left;
-    }
-    
-    .page_item a {
-        display: block;
-        color: #ff5f5f;
-        text-align: center;
-        padding: 12px 20px;
-        text-decoration: none;
-        font-size: 15pt;
-    }
-    
-    .page_item a:hover {
-        background-color: #f75c60;
-        border: 2px solid #333366;
-        color: #333366;
-    }
-    
-    nav#site-navigation {
-        justify-content: center;
-        text-align: center;
-        display: inline-grid;
     }
     
     /* 3 Columns Layout for Header */
