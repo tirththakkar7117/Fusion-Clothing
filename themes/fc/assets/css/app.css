@@ -291,3 +291,41 @@ button#wsf-1-field-5:hover {
         width: 100% !important;
     }
 }
+
+/* Post Styling */
+
+.post-thumbnail {
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+time.entry-date.published {
+    text-decoration: none;
+    color: #000000;
+    font-style: italic;
+}
+
+time.updated {
+    color: #000000;
+    padding: 0 0 0 10px;
+}
+
+.entry-meta {
+    font-size: 25px;
+}
+
+header.post-header {
+    background-color: #ffffff;
+}
+
+#custom-post-bg {
+    background-color: #eeeeee;
+}
+
+.post-custom-bg {
+    background-color: #eeeeee;
+}
