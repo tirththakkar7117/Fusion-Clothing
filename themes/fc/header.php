@@ -56,9 +56,9 @@
 			?>
 		</nav><!-- #site-navigation -->
 		<div class="icons column-3 center flex-no-width">
-		<i class="fa fa-user fa-icon font-custom-style" aria-hidden="true"></i>
-            <i class="fa fa-shopping-cart fa-icon font-custom-style" aria-hidden="true"></i>
-            <i class="fa fa-search fa-icon font-custom-style" aria-hidden="true"></i>
+			<?php echo get_theme_mod( 'fc_myaccount_icon' ) ?>
+			<?php echo get_theme_mod( 'fc_cart_icon' ) ?>
+			<i class="fa fa-search fa-icon font-custom-style" aria-hidden="true"></i>
 		</div>
 	</div>
 </header>
