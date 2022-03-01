@@ -329,3 +329,15 @@ header.post-header {
 .post-custom-bg {
     background-color: #eeeeee;
 }
+
+.vertical {
+    display: inline;
+}
+
+.vertical a {
+    color: #ffffff;
+}
+
+.vertical a:hover {
+    background-color: none !important;
+}
