@@ -13,12 +13,17 @@
 <aside id="secondary" class="widget-area" style="margin:-28px 0 0 0px;">
 	<div class="row bg-primary-color">
 		<div class="col-4">
-			<h2 class="center">Quick Links</h2>
-			<ul>
-				<li class="center li-style">Home</li>
-				<li class="center li-style">About</li>
-				<li class="center li-style">Contact</li>
-			</ul>
+			<h2 class="center">
+			<?php echo get_theme_mod( 'fc_nav_title' ) ?>
+			</h2>
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-footer',
+					'menu_id'        => 'footer-menu',
+				)
+			);
+			?>
 		</div>
 		<div class="col-4">
 		<h2 class="center">

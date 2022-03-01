@@ -50,6 +50,7 @@ function fc_setup() {
 	register_nav_menus(
 		array(
 			'menu-primary' => esc_html__( 'Primary', 'fc' ),
+			'menu-footer'  => esc_html__('Footer', 'fc')
 		)
 	);
 
