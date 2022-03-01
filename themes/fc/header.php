@@ -56,8 +56,8 @@
 			?>
 		</nav><!-- #site-navigation -->
 		<div class="icons column-3 center flex-no-width">
-			<?php echo get_theme_mod( 'fc_myaccount_icon' ) ?>
-			<?php echo get_theme_mod( 'fc_cart_icon' ) ?>
+			<a href="<?php echo get_theme_mod( 'fc_myaccount_url' ) ?>"><?php echo get_theme_mod( 'fc_myaccount_icon' ) ?></a>
+			<a href="<?php echo get_theme_mod( 'fc_cart_url' ) ?>"><?php echo get_theme_mod( 'fc_cart_icon' ) ?></a>
 			<i class="fa fa-search fa-icon font-custom-style" aria-hidden="true"></i>
 		</div>
 	</div>
