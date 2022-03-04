@@ -45,6 +45,7 @@
 			<?php endif; ?>
 		</div>
 		<!-- .site-branding -->
+		<?php if(has_nav_menu('menu-primary')){ ?>
 		<nav id="site-navigation" class="main-navigation">
 			<?php
 			wp_nav_menu(
@@ -53,12 +54,13 @@
 					'menu_id'        => 'primary-menu',
 				)
 			);
-			?>
+		}?>
 		</nav><!-- #site-navigation -->
-		<div class="icons column-3 center flex-no-width">
+		<div class="icons column-<?php echo has_nav_menu('menu-primary') ? '3' : '6'; ?> center flex-no-width">
 			<a href="<?php echo get_theme_mod( 'fc_myaccount_url' ) ?>"><?php echo get_theme_mod( 'fc_myaccount_icon' ) ?></a>
 			<a href="<?php echo get_theme_mod( 'fc_cart_url' ) ?>"><?php echo get_theme_mod( 'fc_cart_icon' ) ?></a>
 			<i class="fa fa-search fa-icon font-custom-style" aria-hidden="true"></i>
+			<?php get_search_form(); ?>
 		</div>
 	</div>
 </header>
