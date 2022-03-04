@@ -10,7 +10,7 @@
  */
 
 ?>
-<aside id="secondary" class="widget-area" style="margin:-28px 0 0 0px;">
+<aside id="secondary" class="widget-area">
 	<div class="row bg-primary-color">
 		<?php if(has_nav_menu('menu-footer')){ ?>
 			<div class="col-4">
