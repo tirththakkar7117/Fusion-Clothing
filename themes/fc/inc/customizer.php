@@ -155,6 +155,81 @@ function fc_customize_register( $wp_customize ) {
 		'section' => 'fc_contact_section'
 	) );
 
+	//* Social Media 
+
+	$wp_customize->add_panel( 'fc_footer_social_media', array (
+		'title'  =>esc_html__( 'Social Media', 'fc' )
+	) );
+
+	$wp_customize->add_section( 'fc_facebook', array (
+		'title'  =>esc_html__( 'Facebook', 'fc' ),
+		'panel'  => 'fc_footer_social_media'
+	) );
+
+	$wp_customize->add_setting( 'fc_facebook_icon', array () );
+
+	$wp_customize->add_control( 'fc_facebook_icon', array(
+		'label'   => 'Facebook Icon',
+		'type'    => 'text',
+		'description' => 'Enter Text or HTML for the Icons',
+		'section' => 'fc_facebook'
+	) );
+
+	$wp_customize->add_setting( 'fc_facebook_url', array () );
+
+	$wp_customize->add_control( 'fc_facebook_url', array(
+		'label'   => 'Enter Facebook URL',
+		'type'    => 'url',
+		'description' => 'Enter the URL for Facebook Icon including https//:',
+		'section' => 'fc_facebook'
+	) );
+
+	$wp_customize->add_section( 'fc_instagram', array (
+		'title'  =>esc_html__( 'Instagram', 'fc' ),
+		'panel'  => 'fc_footer_social_media'
+	) );
+
+	$wp_customize->add_setting( 'fc_instagram_icon', array () );
+
+	$wp_customize->add_control( 'fc_instagram_icon', array(
+		'label'   => 'Instagram Icon',
+		'type'    => 'text',
+		'description' => 'Enter Text or HTML for the Icons',
+		'section' => 'fc_instagram'
+	) );
+
+	$wp_customize->add_setting( 'fc_instagram_url', array () );
+
+	$wp_customize->add_control( 'fc_instagram_url', array(
+		'label'   => 'Enter Instagram URL',
+		'type'    => 'url',
+		'description' => 'Enter the URL for Instagram Icon including https//:',
+		'section' => 'fc_instagram'
+	) );
+
+	$wp_customize->add_section( 'fc_twitter', array (
+		'title'  =>esc_html__( 'Twitter', 'fc' ),
+		'panel'  => 'fc_footer_social_media'
+	) );
+
+	$wp_customize->add_setting( 'fc_twitter_icon', array () );
+
+	$wp_customize->add_control( 'fc_twitter_icon', array(
+		'label'   => 'Twitter Icon',
+		'type'    => 'text',
+		'description' => 'Enter Text or HTML for the Icons',
+		'section' => 'fc_twitter'
+	) );
+
+	$wp_customize->add_setting( 'fc_twitter_url', array () );
+
+	$wp_customize->add_control( 'fc_twitter_url', array(
+		'label'   => 'Enter Twitter URL',
+		'type'    => 'url',
+		'description' => 'Enter the URL for Twitter Icon including https//:',
+		'section' => 'fc_twitter'
+	) );
+
 }
 add_action( 'customize_register', 'fc_customize_register' );
 

@@ -12,7 +12,8 @@
 ?>
 <aside id="secondary" class="widget-area" style="margin:-28px 0 0 0px;">
 	<div class="row bg-primary-color">
-		<div class="col-4">
+		<?php if(has_nav_menu('menu-footer')){ ?>
+			<div class="col-4">
 			<h2 class="center">
 			<?php echo get_theme_mod( 'fc_nav_title' ) ?>
 			</h2>
@@ -25,7 +26,9 @@
 			);
 			?>
 		</div>
-		<div class="col-4">
+		<?php } ?>
+		
+		<div class="col-<?php echo has_nav_menu('menu-footer') ? '4' : '8'; ?> ">
 		<h2 class="center">
 		<?php echo get_theme_mod( 'fc_title' ) ?>
 		</h2>
@@ -43,9 +46,9 @@
 			<p class="center">
 			<?php echo get_theme_mod( 'fc_email_information' ) ?>
 			</p>
-			<i class="fa fa-facebook-f white"></i>
-			<i class="fa fa-instagram white center"></i>
-			<i class="fa fa-twitter white center"></i>
+			<a href="<?php echo esc_url( get_theme_mod( 'fc_facebook_url' ) );?>"><?php echo get_theme_mod( 'fc_facebook_icon' ) ?></a>
+			<a href="<?php echo esc_url( get_theme_mod( 'fc_instagram_url' ) );?>"><?php echo get_theme_mod( 'fc_instagram_icon' ) ?></a>
+			<a href="<?php echo esc_url( get_theme_mod( 'fc_twitter_url' ) );?>"><?php echo get_theme_mod( 'fc_twitter_icon' ) ?></a>
 		</div>
 	</div>
 </aside>
