@@ -341,3 +341,29 @@ header.post-header {
 .vertical a:hover {
     background-color: none !important;
 }
+
+.width-auto > * {
+    width: auto !important;
+}
+
+.row-3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.colm-3 {
+    float: left;
+    width: 26.33%;
+    padding: 50px;
+    height: auto;
+}
+
+.bg-grey {
+    background-color: #d3d3d3;
+}
+
+.colm-3 article {
+    background-color: #ffffff;
+    padding: 20px 10px 30px 20px;
+}
