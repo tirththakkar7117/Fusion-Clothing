@@ -409,3 +409,112 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
 .products li {
     text-align: center;
 }
+
+.button.single_add_to_cart_button.button.alt {
+    color: #ff5f5f;
+    background-color: #333366;
+    font-size: 1.125em;
+    cursor: pointer;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center;
+    border-radius: inherit;
+}
+
+.button.single_add_to_cart_button.button.alt:hover {
+    color: #ff5f5f;
+    background-color: transparent;
+    border: 2px solid #ff5f5f;
+    cursor: pointer;
+}
+
+.woocommerce .quantity .qty {
+    width: 60px;
+    text-align: center;
+    height: 30px;
+    color: #000000;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: #000000;
+    font-size: 22pt;
+}
+
+.woocommerce-message {
+    border-top-color: #333366;
+}
+
+.woocommerce-message::before {
+    color: #333366;
+}
+
+a.button.wc-forward {
+    color: #ff5f5f;
+    background-color: #333366;
+    font-size: 1.125em;
+    cursor: pointer;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center;
+    border-radius: inherit;
+}
+
+a.button.wc-forward:hover {
+    color: #ff5f5f;
+    background-color: transparent;
+    border: 2px solid #ff5f5f;
+    cursor: pointer;
+}
+
+a.checkout-button.button.alt.wc-forward {
+    color: #ff5f5f;
+    background-color: #333366;
+    font-size: 1.125em;
+    cursor: pointer;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center;
+    border-radius: inherit;
+}
+
+a.checkout-button.button.alt.wc-forward:hover {
+    color: #ff5f5f;
+    background-color: transparent;
+    border: 2px solid #ff5f5f;
+    cursor: pointer;
+}
+
+.input-text {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    padding: 0px 0px 0px 10px;
+}
+
+span.select2-selection.select2-selection--single {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    padding: 4px 0px 0px 0px;
+    color: #000000 ;
+}
+
+textarea#order_comments {
+    padding: 5px 0px 0px 10px;
+}
+
+button#place_order {
+    color: #ff5f5f;
+    background-color: #333366;
+    font-size: 1.125em;
+    cursor: pointer;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center;
+    border-radius: inherit;
+}
+
+button#place_order:hover {
+    color: #ff5f5f;
+    background-color: transparent;
+    border: 2px solid #ff5f5f;
+    cursor: pointer;
+}
