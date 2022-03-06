@@ -44,7 +44,7 @@ body {
         color: #333366;
     }
 
-    li {
+    #primary-menu li {
         display: inline-block;
         position: relative;
         text-align: left;
@@ -563,4 +563,67 @@ input.search-submit {
     background-color: #ff5f5f;
     color: #ffffff;
     font-weight: bold;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li:first-child {
+    padding-top: 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li.is-active a {
+    color: #333366;
+    text-decoration: underline;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li a {
+    color: #000000;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li a {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li a:hover {
+    text-decoration: underline;
+}
+
+.woocommerce-MyAccount-content a {
+    color: #333366;
+}
+
+a.woocommerce-Button.button {
+    color: #ff5f5f;
+    background-color: #333366;
+    font-size: 1.125em;
+    cursor: pointer;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center;
+    border-radius: inherit;
+}
+
+a.woocommerce-Button.button:hover {
+    color: #333366;
+    background-color: transparent;
+    border: 2px solid #333366;
+}
+
+button.woocommerce-Button.button {
+    color: #ff5f5f;
+    background-color: #333366;
+    font-size: 1.125em;
+    cursor: pointer;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center;
+    border-radius: inherit;
+}
+
+button.woocommerce-Button.button:hover {
+    color: #333366;
+    background-color: transparent;
+    border: 2px solid #333366;
 }
