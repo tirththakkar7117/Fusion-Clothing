@@ -518,3 +518,31 @@ button#place_order:hover {
     border: 2px solid #ff5f5f;
     cursor: pointer;
 }
+
+.logged-in-as a {
+    color: #000000;
+    text-decoration: underline;
+    font-size: 15pt;
+}
+
+.comment-form-comment label {
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+form#commentform {
+    text-align: center;
+}
+
+nav.navigation.post-navigation {
+    text-align: center;
+}
+
+footer.entry-footer {
+    text-align: center;
+}
+
+h3#reply-title {
+    text-align: center;
+    font-size: 20pt;
+}
