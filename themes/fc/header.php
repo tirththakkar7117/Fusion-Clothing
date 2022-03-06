@@ -59,7 +59,7 @@
 		<div class="icons column-<?php echo has_nav_menu('menu-primary') ? '3' : '6'; ?> center flex-no-width">
 			<a href="<?php echo get_theme_mod( 'fc_myaccount_url' ) ?>"><?php echo get_theme_mod( 'fc_myaccount_icon' ) ?></a>
 			<a href="<?php echo get_theme_mod( 'fc_cart_url' ) ?>"><?php echo get_theme_mod( 'fc_cart_icon' ) ?></a>
-			<i class="fa fa-search fa-icon font-custom-style" aria-hidden="true"></i>
+			<!--<i class="fa fa-search fa-icon font-custom-style" aria-hidden="true"></i> -->
 			<?php get_search_form(); ?>
 		</div>
 	</div>
