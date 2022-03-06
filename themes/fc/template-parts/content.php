@@ -56,7 +56,6 @@
 		);
 		?>
 	</div><!-- .entry-content -->
-	<div>Test</div>
 
 	<footer class="entry-footer">
 		<?php fc_entry_footer(); ?>
