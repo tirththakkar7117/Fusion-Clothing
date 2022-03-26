@@ -33,7 +33,6 @@ function wpdocs_kantbtrue_init() {
     );     
     $args = array(
         'labels'             => $labels,
-        'description'        => 'Fashion Style custom post type.',
         'public'             => true,
         'publicly_queryable' => true,
         'show_ui'            => true,
