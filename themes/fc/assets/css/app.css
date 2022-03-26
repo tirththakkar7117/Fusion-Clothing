@@ -627,3 +627,11 @@ button.woocommerce-Button.button:hover {
     background-color: transparent;
     border: 2px solid #333366;
 }
+
+.colm-3 .type-fc_fashion_style {
+    padding: 20px 5px 30px 20px;
+}
+
+.colm-3 img {
+    margin: 0 0 0 -7px;
+}
