@@ -13,7 +13,7 @@
 <aside id="secondary" class="widget-area">
 	<div class="row bg-primary-color">
 		<div class="row-3">
-			//* Custom WP_Query to display posts in the footer.
+			<!-- Custom WP_Query to display posts in the footer. -->
 			<?php 
 			$fashion_style_args = array(
 				//* Post type set to post
@@ -32,34 +32,34 @@
 				//* while it have posts, it displays the post.
 				while( $fashion_style_args->have_posts() ) {
 					$fashion_style_args->the_post();?>
-					//* post will show in 3 columns
+					<!-- post will show in 3 columns  -->
 					<div class="colm-3">
-						//* Show the post thumbnail
+						<!-- Show the post thumbnail -->
 						<?php the_post_thumbnail(); ?>
-						//* Show the post title in h3 and link to that specific post
+						<!-- Show the post title in h3 and link to that specific post -->
 						<h3>
 							<a class="custom-color" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 						</h3>
-						//* Show the post excerpt.
+						<!-- Show the post excerpt. -->
 						<?php the_excerpt() ;?>
 					</div>
 					<?php
 				}?>
 			</div>
-			//* Reset the post data.
+			<!-- Reset the post data. -->
 			<?php wp_reset_postdata();
 			}
 			?>
 		</div>
 	<div class="row bg-primary-color">
-		//* Check to see if meu-footer is selected
+		<!-- Check to see if meu-footer is selected -->
 		<?php if(has_nav_menu('menu-footer')){ ?>
 			<div class="col-4">
 				<h2 class="center">
-					//* Navigation title for quick links.
+					<!-- Navigation title for quick links. -->
 					<?php echo get_theme_mod( 'fc_nav_title' ) ?>
 				</h2>
-				//* Show the menu-footer
+				<!-- Show the menu-footer -->
 				<?php
 					wp_nav_menu(
 						array(
@@ -70,35 +70,35 @@
 				?>
 			</div>
 		<?php } ?>
-		//* if menu-footer is selected, set the columns layout to 4, else 8.
+		<!-- if menu-footer is selected, set the columns layout to 4, else 8. -->
 		<div class="col-<?php echo has_nav_menu('menu-footer') ? '4' : '8'; ?> ">
 			<h2 class="center">
-				//* title of the footer 
+				<!-- title of the footer -->
 			<?php echo get_theme_mod( 'fc_title' ) ?>
 			</h2>
 			<p class="center">
-				//* about us content
+				<!-- about us content -->
 			<?php echo get_theme_mod( 'fc_about_content' ) ?>
 			</p>
 			</div>
 			<div class="col-4" style="text-align:center;">
 				<h2 class="center">
-					//* show the contant section title
+					<!-- show the contant section title -->
 				<?php echo get_theme_mod( 'fc_contact_title' ) ?>
 				</h2>
 				<p class="center">
-					//* Show phone information
+					<!-- Show phone information -->
 				<?php echo get_theme_mod( 'fc_phone_information' ) ?>
 				</p>
 				<p class="center">
-					//* Show email information
+					<!-- Show email information -->
 				<?php echo get_theme_mod( 'fc_email_information' ) ?>
 				</p>
-				//* Get the facebook icon and set the link of that icon
+				<!-- Get the facebook icon and set the link of that icon -->
 				<a href="<?php echo esc_url( get_theme_mod( 'fc_facebook_url' ) );?>"><?php echo get_theme_mod( 'fc_facebook_icon' ) ?></a>
-				//* Get the instagram icon and set the link of that icon
+				<!-- Get the instagram icon and set the link of that icon -->
 				<a href="<?php echo esc_url( get_theme_mod( 'fc_instagram_url' ) );?>"><?php echo get_theme_mod( 'fc_instagram_icon' ) ?></a>
-				//* Get the twitter icon and set the link of that icon
+				<!-- Get the twitter icon and set the link of that icon  -->
 				<a href="<?php echo esc_url( get_theme_mod( 'fc_twitter_url' ) );?>"><?php echo get_theme_mod( 'fc_twitter_icon' ) ?></a>
 			</div>
 		</div>
