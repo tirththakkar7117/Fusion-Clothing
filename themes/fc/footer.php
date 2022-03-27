@@ -12,6 +12,34 @@
 ?>
 <aside id="secondary" class="widget-area">
 	<div class="row bg-primary-color">
+		<div class="row-3">
+	<?php 
+	$fashion_style_args = array(
+		'post_type'      => array( 'post' ),
+		'posts_per_page' => 3,
+		'post_status'    => 'publish'
+	);
+	$fashion_style_args = new WP_Query( $fashion_style_args );
+	?>
+
+	<?php
+	if( $fashion_style_args->have_posts() ) {
+		while( $fashion_style_args->have_posts() ) {
+			$fashion_style_args->the_post();?>
+			<div class="colm-3">
+			<?php 
+			the_post_thumbnail();?>
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<?php	the_excerpt() ;?>
+				</div>
+				<?php
+		}?>
+	</div>
+	<?php wp_reset_postdata();
+	}
+	?>
+</div>
+	<div class="row bg-primary-color">
 		<?php if(has_nav_menu('menu-footer')){ ?>
 			<div class="col-4">
 			<h2 class="center">
@@ -52,6 +80,7 @@
 		</div>
 	</div>
 </aside>
+
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 				<?php
