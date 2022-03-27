@@ -25,15 +25,20 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 <header id="masthead" class="site-header">
+	//* Start of dynamic header
 	<div class="row">
+		//* div which will use 3 columns layout and all the content in center
 		<div class="site-branding column-3 center">
 		<?php
 			the_custom_logo();
+			//* if statement to check if the page is front page and homepage.
 			if ( is_front_page() && is_home() ) :
 				?>
+				//* if it is, then it will show the site title
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			else :
+				//* if not then it will show as a p tag.
 				?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
@@ -56,10 +61,18 @@
 			);
 		}?>
 		</nav><!-- #site-navigation -->
+		//* if there is menu selected, it will be in 3 column layout or it will be in 6 column layout
 		<div class="icons column-<?php echo has_nav_menu('menu-primary') ? '3' : '6'; ?> center flex-no-width">
-			<a href="<?php echo get_theme_mod( 'fc_myaccount_url' ) ?>"><?php echo get_theme_mod( 'fc_myaccount_icon' ) ?></a>
-			<a href="<?php echo get_theme_mod( 'fc_cart_url' ) ?>"><?php echo get_theme_mod( 'fc_cart_icon' ) ?></a>
+		//* call my account url to show in the header
+			<a href="<?php echo get_theme_mod( 'fc_myaccount_url' ) ?>">
+			//* call my account icon to show in the header
+			<?php echo get_theme_mod( 'fc_myaccount_icon' ) ?></a>
+			//* call cart url to show in the header
+			<a href="<?php echo get_theme_mod( 'fc_cart_url' ) ?>">
+			//* call cart icon to show in the header
+			<?php echo get_theme_mod( 'fc_cart_icon' ) ?></a>
 			<!--<i class="fa fa-search fa-icon font-custom-style" aria-hidden="true"></i> -->
+			//* Display the search form
 			<?php get_search_form(); ?>
 		</div>
 	</div>
