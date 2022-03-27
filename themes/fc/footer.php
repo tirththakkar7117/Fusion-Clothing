@@ -29,7 +29,7 @@
 			<div class="colm-3">
 			<?php 
 			the_post_thumbnail();?>
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<h3><a class="custom-color" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		<?php	the_excerpt() ;?>
 				</div>
 				<?php

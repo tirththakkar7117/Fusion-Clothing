@@ -635,3 +635,11 @@ button.woocommerce-Button.button:hover {
 .colm-3 img {
     margin: 0 0 0 -7px;
 }
+
+.custom-color {
+    color: #ff5f5f;
+}
+
+.custom-color:hover {
+    color: #ffffff;
+}
