@@ -7,13 +7,13 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     }
-    
+    /* Fa icon fontsize and color */
     i.fa {
         font-size: 100px;
         color: #333366;
     }
 
-    /* Menu */
+    /* Menu Navigation */
 
     ul#primary-menu {
         margin: 0;
@@ -58,6 +58,7 @@ body {
     }
     
     /* Header */
+
     header.entry-header {
         background-color: #eeeeee;
         text-align: center;
@@ -87,7 +88,7 @@ body {
         display: inline-block;
         width: 50%;
     }
-    
+    /* Row to display as flex */
     .row {
         display: flex;  
         flex-direction: row;
@@ -195,6 +196,7 @@ body {
 
 /* Footer Styling */
 
+/* 3 columns layout */
 .col-3 {
     float: left;
     width: 23%;
@@ -202,12 +204,16 @@ body {
     height: 300px;
 }
 
+/* 2 columns layout */
+
 .col-6 {
     float: left;
     width: 49%;
     padding: 10px;
     height: 300px;
 }
+
+/* 3 column layout */
 
 .col-4 {
     float: left;
@@ -239,6 +245,7 @@ body {
     color: #ffffff;
 }
 
+/* List style type */
 .li-style {
     list-style-type: none;
     text-decoration: none;
@@ -250,6 +257,9 @@ body {
     padding: 10px 0px 0px 10px;
 }
 
+
+/* Button Styling */
+
 button#wsf-1-field-5 {
     color: #ff5f5f;
     background-color: #333366;
@@ -260,11 +270,15 @@ button#wsf-1-field-5 {
     border-radius: inherit;
 }
 
+/* On hover button styling */
 button#wsf-1-field-5:hover {
     color: #333366;
     background-color: transparent;
     border: 2px solid #333366;
 }
+
+
+/* Responsive Media Query */
 
 @media screen and (max-width: 782px) {
     html {
@@ -293,7 +307,15 @@ button#wsf-1-field-5:hover {
     }
 }
 
+@media screen and (max-width: 782px) {
+    .entry-content .woocommerce.columns-4 {
+        width: auto;
+    }
+}
+
 /* Post Styling */
+
+/* Post Featured Image Styling */
 
 .post-thumbnail {
     text-align: center;
@@ -304,29 +326,36 @@ a {
     text-decoration: none;
 }
 
+/* Entry Date of Post Styling */
+
 time.entry-date.published {
     text-decoration: none;
     color: #000000;
     font-style: italic;
 }
 
+/* Change the updated time Styling */
 time.updated {
     color: #000000;
     padding: 0 0 0 10px;
 }
 
+/* Entry meta tags styling */
 .entry-meta {
     font-size: 25px;
 }
 
+/* Post header styling */
 header.post-header {
     background-color: #ffffff;
 }
 
+/* Change background color of custom post */
 #custom-post-bg {
     background-color: #eeeeee;
 }
 
+/* Change background color of custom post */
 .post-custom-bg {
     background-color: #eeeeee;
 }
@@ -343,6 +372,7 @@ header.post-header {
     background-color: none !important;
 }
 
+/* Change width of all the elements inside of width-auto class */
 .width-auto > * {
     width: auto !important;
 }
@@ -353,6 +383,7 @@ header.post-header {
     clear: both;
 }
 
+/* 4 column layout */
 .colm-3 {
     float: left;
     width: 26.33%;
@@ -360,37 +391,37 @@ header.post-header {
     height: auto;
 }
 
+/* Background color Grey */
 .bg-grey {
     background-color: #d3d3d3;
 }
 
+/* Column 3 articles styling */
 .colm-3 article {
     background-color: #ffffff;
     padding: 20px 10px 30px 20px;
 }
 
+/* Woocommerce Entry Content Styling */
 .entry-content .woocommerce.columns-4 {
     width: 1300px;
 }
 
-@media screen and (max-width: 782px) {
-    .entry-content .woocommerce.columns-4 {
-        width: auto;
-    }
-}
-
+/*  Woocommerce price styling */
 span.price {
     text-align: center;
     color: #000000 !important;
     font-size: 15pt !important;
 }
 
+/* Product title styling */
 h2.woocommerce-loop-product__title {
     text-align: center;
     color: #000000;
     font-size: 20pt !important;
 }
 
+/* Add to cart button styling */
 a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
     color: #ff5f5f;
     background-color: #333366;
@@ -400,6 +431,8 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
     text-align: center;
     border-radius: inherit;
 }
+
+/* On hover add to cart button styling */
 a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
     color: #ff5f5f;
     background-color: transparent;
@@ -407,8 +440,11 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
     cursor: pointer;
 }
 
-.products li {
-    text-align: center;
+.button.single_add_to_cart_button.button.alt:hover {
+    color: #ff5f5f;
+    background-color: transparent;
+    border: 2px solid #ff5f5f;
+    cursor: pointer;
 }
 
 .button.single_add_to_cart_button.button.alt {
@@ -421,13 +457,12 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
     border-radius: inherit;
 }
 
-.button.single_add_to_cart_button.button.alt:hover {
-    color: #ff5f5f;
-    background-color: transparent;
-    border: 2px solid #ff5f5f;
-    cursor: pointer;
+/* Li products */
+.products li {
+    text-align: center;
 }
 
+/* Woocommerce product quantity styling */
 .woocommerce .quantity .qty {
     width: 60px;
     text-align: center;
@@ -435,11 +470,13 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
     color: #000000;
 }
 
+/* Woocommerce price fontsize and color styling */
 .woocommerce div.product p.price, .woocommerce div.product span.price {
     color: #000000;
     font-size: 22pt;
 }
 
+/* Woocommerce message */
 .woocommerce-message {
     border-top-color: #333366;
 }
@@ -448,6 +485,7 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
     color: #333366;
 }
 
+/* Checkout button styling */
 a.button.wc-forward {
     color: #ff5f5f;
     background-color: #333366;
@@ -482,6 +520,7 @@ a.checkout-button.button.alt.wc-forward:hover {
     cursor: pointer;
 }
 
+/* Input type text styling */
 .input-text {
     width: 100%;
     height: 40px;
@@ -503,6 +542,7 @@ textarea#order_comments {
     padding: 5px 0px 0px 10px;
 }
 
+/* Place order button styling */
 button#place_order {
     color: #ff5f5f;
     background-color: #333366;
@@ -520,34 +560,41 @@ button#place_order:hover {
     cursor: pointer;
 }
 
+/* Logged in text styling */
 .logged-in-as a {
     color: #000000;
     text-decoration: underline;
     font-size: 15pt;
 }
 
+/* Comment form */
 .comment-form-comment label {
     display: block;
     margin-bottom: 0.25em;
 }
 
+/* Form center */
 form#commentform {
     text-align: center;
 }
 
+/* Navigation center */
 nav.navigation.post-navigation {
     text-align: center;
 }
 
+/*  Text algin for entry content of footer */
 footer.entry-footer {
     text-align: center;
 }
 
+/* Message reply title styling */
 h3#reply-title {
     text-align: center;
     font-size: 20pt;
 }
 
+/* Input search field */
 input.search-field {
     height: 35px;
     width: 130px;
@@ -565,6 +612,7 @@ input.search-submit {
     font-weight: bold;
 }
 
+/* Woocommerce myaccount navigation and content styling */
 .woocommerce-account .woocommerce-MyAccount-navigation li:first-child {
     padding-top: 0;
 }
@@ -596,6 +644,7 @@ input.search-submit {
     color: #333366;
 }
 
+/* Woocommerce button styling */
 a.woocommerce-Button.button {
     color: #ff5f5f;
     background-color: #333366;
@@ -628,14 +677,17 @@ button.woocommerce-Button.button:hover {
     border: 2px solid #333366;
 }
 
+/* Custom post type image padding */
 .colm-3 .type-fc_fashion_style {
     padding: 20px 5px 30px 20px;
 }
 
+/* All images for columns 3 layout images */
 .colm-3 img {
     margin: 0 0 0 -7px;
 }
 
+/* Custom color for latest post wp_query */
 .custom-color {
     color: #ff5f5f;
 }
