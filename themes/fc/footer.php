@@ -33,7 +33,7 @@
 				while( $fashion_style_args->have_posts() ) {
 					$fashion_style_args->the_post();?>
 					<!-- post will show in 3 columns  -->
-					<div class="colm-3">
+					<div class="colm-3 responsive-col-12">
 						<!-- Show the post thumbnail -->
 						<?php the_post_thumbnail(); ?>
 						<!-- Show the post title in h3 and link to that specific post -->
@@ -54,7 +54,7 @@
 	<div class="row bg-primary-color">
 		<!-- Check to see if meu-footer is selected -->
 		<?php if(has_nav_menu('menu-footer')){ ?>
-			<div class="col-4">
+			<div class="col-4 responsive-12">
 				<h2 class="center">
 					<!-- Navigation title for quick links. -->
 					<?php echo get_theme_mod( 'fc_nav_title' ) ?>
@@ -71,7 +71,7 @@
 			</div>
 		<?php } ?>
 		<!-- if menu-footer is selected, set the columns layout to 4, else 8. -->
-		<div class="col-<?php echo has_nav_menu('menu-footer') ? '4' : '8'; ?> ">
+		<div class="col-<?php echo has_nav_menu('menu-footer') ? '4' : '8'; ?> responsive-12">
 			<h2 class="center">
 				<!-- title of the footer -->
 			<?php echo get_theme_mod( 'fc_title' ) ?>
@@ -81,7 +81,7 @@
 			<?php echo get_theme_mod( 'fc_about_content' ) ?>
 			</p>
 			</div>
-			<div class="col-4" style="text-align:center;">
+			<div class="col-4 responsive-12" style="text-align:center;">
 				<h2 class="center">
 					<!-- show the contant section title -->
 				<?php echo get_theme_mod( 'fc_contact_title' ) ?>

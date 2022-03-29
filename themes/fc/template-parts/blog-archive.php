@@ -10,7 +10,7 @@
 
 ?>
 
-<div class="colm-3">
+<div class="colm-3 width-responsive-100">
     <article id="custom-post-bg post-<?php the_ID(); ?>" <?php post_class(); ?>>
         
         <?php fc_post_thumbnail(); ?>
